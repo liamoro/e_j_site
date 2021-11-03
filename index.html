@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <title>Singleton security</title>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="header-logo white-logo"></div>
+    <nav class="header-nav">
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">О команде</a></li>
+        <li><a href="#">Связаться с нами</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-contacts">
+      <div class="number">+7(900)000-00-00</div>
+      <span>Связаться с нами</span>
+    </div>
+
+  </header>
+
+  <!-- PREVIEW SECTION -->
+  <section class="preview">
+    <div class="preview-logo"></div>
+
+    <video autoplay muted loop class="preview-video">
+      <source src="images/load_page_background.mp4" type="video/mp4">
+    </video>
+  </section>
+
+
+  <!-- COMPAY SECTION -->
+  <section class="company">
+    <div class="company-description">
+      <h1 class="text-dark">Профиль</h1>
+      <div class="text">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, expedita, aspernatur sint modi ipsum dolores iure qui explicabo magnam quis voluptates autem?
+        <br><br>
+        Fugit omnis dolorem, nisi quod quasi dolorum nobis explicabo ex nihil distinctio quisquam animi illum ut delectus, reprehenderit sequi porro veniam? 
+        <br><br>
+        Deserunt, a quibusdam dolore vel repudiandae ex totam fugit eum perferendis tenetur assumenda? Saepe, doloribus maiores quibusdam.
+        <br><br>
+        Consectetur deserunt dolorem fugiat, dolor corrupti placeat nemo eius recusandae accusamus incidunt, vel voluptates porro 
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services-wrap">
+    <div class="services">
+
+      <div class="services-description">
+        <h1 class="text-light">
+          Услуги
+        </h1>
+        <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sapiente soluta, suscipit tenetur voluptatem facilis non nostrum unde cumque praesentium.</div>
+      </div>
+
+      <div class="service">
+        <h3 class="text-dark">
+          <!-- test icons -->
+          <span class="service-icon"><i class="ri-find-replace-fill"></i></span>
+          <span class="title">Анализ защищенности</span>
+        </h3>
+        <ul>
+          <li>Приложений</li>
+          <li>Веб-приложений</li>
+          <li>Мобильных приложений</li>
+          <li>Систем ДБО</li>
+          <li>Внутренней IT-инфраструктуры</li>
+        </ul>
+      </div>
+      <div class="service">
+        <h3 class="text-dark">
+          <span class="service-icon"><i class="ri-mouse-line"></i></span>
+          <span class="title">Тестирование на проникновение</span>
+        </h3>
+        <ul>
+          <li>Веб-приложений</li>
+          <li>Мобильных приложений</li>
+          <li>Систем ДБО</li>
+          <li>Внутренней IT-инфраструктуры</li>
+        </ul>
+      </div>
+      <div class="service">
+        <h3 class="text-dark">
+          <span class="service-icon"><i class="ri-shield-check-line"></i></span>
+          <span class="title">Нагрузочное тестирование</span>
+        </h3>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+      </div>
+      <div class="service">
+        <h3 class="text-dark">
+          <span class="service-icon"><i class="ri-computer-line"></i></span>
+          <span class="title">RedTeaming</span>
+        </h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto obcaecati ad doloribus corrupti eius quo!
+      </div>
+      <div class="service">
+        <h3 class="text-dark">
+          <span class="service-icon"><i class="ri-terminal-box-line"></i></span>
+          <span class="title">Continuous Penetration Testing</span>
+        </h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum maiores a architecto similique aut dolorum, vero in non officia facere.
+      </div>
+      <div class="service">
+        <h3 class="text-dark">
+          <span class="service-icon"><i class="ri-organization-chart"></i></span>
+          <span class="title">Организация и поддержка BugBounty программ</span>
+        </h3>
+        Perspiciatis dolores dignissimos iusto dolorem doloribus vel, minima impedit commodi fugiat!
+      </div>
+      <div class="service">
+        <h3 class="text-dark">
+          <span class="service-icon"><i class="ri-secure-payment-line"></i></span>
+          <span class="title">Security consulting</span>
+        </h3>
+        <ul>
+          <li>Приложений</li>
+          <li>Веб-приложений</li>
+          <li>Мобильных приложений</li>
+          <li>Систем ДБО</li>
+        </ul>
+      </div>
+
+      <div class="service">
+        <h3 class="text-dark">
+          <span class="service-icon"><i class="ri-git-repository-private-line"></i></span>
+          <span class="title">Повышение осведомленности в вопросах беозопасности</span>
+        </h3>
+        <ul>
+          <li>Приложений</li>
+          <li>Мобильных приложений</li>
+          <li>Систем ДБО</li>
+          <li>Внутренней IT-инфраструктуры</li>
+        </ul>
+      </div>
+    </div>
+    <button type="button" class="btn-contact">Связаться с нами<i class="ri-arrow-right-line"></i></button>
+  </section>
+
+  <!-- ADVANTAGES -->
+  <section class="advantages-wrap">
+    <div class="advantages">
+      <div class="advantages-description">
+        <h1  class="text-light">Почему выбирают Singleton Security?</h1>
+        <div class="text text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+      <div class="advantages-items">
+        <div class="advantage-item">
+          <span class="value">3,452 +</span>
+          <div class="description">Lorem ipsum</div>
+        </div>
+        <div class="advantage-item">
+          <span class="value">100%</span>
+          <div class="description">Lorem ipsum</div>
+        </div>
+        <div class="advantage-item">
+          <span class="value">85 +</span>
+          <div class="description">Lorem ipsum</div>
+        </div>
+        <div class="advantage-item">
+          <span class="value">1,456 +</span>
+          <div class="description">Lorem ipsum</div>
+        </div>
+      </div>
+    </div>
+
+  
+
+  <div class="customers">
+    <h1 class="dark-text">Нам доверяют</h1>
+    <div>
+      <img src="/images/customer_1.png" class="customer" >
+      <img src="/images/customer_2.png" class="customer">
+      <img src="/images/customer_3.png" class="customer">
+      <img src="/images/customer_4.png" class="customer">
+      <img src="/images/customer_5.png" class="customer">
+    </div>
+  </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-contats-wrap">
+      <div class="footer-contats">
+        <div class="footer-logo white-logo"></div>
+        <a href="" class="phone"><i class="ri-phone-line"></i>+7(900)000-00-00</a>
+        <a href=""  class="e-mail"><i class="ri-mail-line"></i>
+          lorem@ipsum.com</a>
+      </div>
+      <div class="test-info">
+        <h3 class="text-light">Lorem iosum</h3>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat obcaecati quam ipsum delectus!</div>
+      </div>
+      <div class="test-info">
+        <h3 class="text-light">Lorem iosum</h3>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat obcaecati quam ipsum delectus!</div>
+      </div>
+      <div class="test-info">
+        <h3 class="text-light">Lorem iosum</h3>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat obcaecati quam ipsum delectus!</div>
+      </div>
+
+    </div>
+
+    <div class="policy-wrap">
+      <div class="policy"><a href="">Политика конфиденциальности</a></div>
+      <div class="copyright"><i class="ri-copyright-line"></i>
+        Singleton. 2021</div>
+    </div>
+  </footer>
+</body>
+</html>

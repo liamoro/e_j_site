@@ -1,0 +1,503 @@
+/* 
+//Const
+
+color: #111B34; 
+color: #7E7B8F; 
+color: #FF2448; 
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+:root {
+  --main-color: #fff; 
+  --dark-color: #111B34; 
+  --light-color: #7E7B8F; 
+  --bright-color: #FF2448; 
+  --bright-color-hover: #FF5773;
+  --footer-text-color: #F0F0F0;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+
+.text-light {
+  color: var(--main-color);
+}
+.text-dark {
+  color: var(--dark-color);
+}
+h1, h3 {
+  font-weight: 700;
+}
+header,
+/* .header-nav ul li a, */
+a {
+  color: var(--main-color);
+}
+
+.header-nav ul li a:hover,
+.main-nav ul li a:active,
+.advantage-item .value,
+.footer-contats i {
+  color: var(--bright-color);
+}
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  width: 100vw;
+  height: 100px;
+  padding: 35px;
+  font-size: 16px;
+  z-index: 1000;
+}
+
+/* LOGO */
+.header-logo {
+  flex: 1;
+  width: 125px;
+  height: 57px;
+}
+.white-logo {
+  background: transparent url("/images/logo_white_1.png") center no-repeat;
+  background-size: contain;
+}
+
+/* NAVIGATION */
+.header-nav {
+  flex: 3;
+}
+.header-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+
+
+
+/* header-contacts */
+.header-contacts {
+  flex: 1;
+}
+.number {
+  font-weight: 900;
+}
+.header-contacts span {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* PREVIEW SECTION */
+.preview {
+  width: 100vw;
+  height: 100vh;
+  background: transparent url("/images/main_img.png") left top no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.preview-logo,
+.preview-video {
+  width: 100%;
+  height: 100%;
+}
+  .preview-video {
+    z-index: -1;
+    object-fit: cover;
+}
+.preview-logo {
+  position: absolute;
+  background: transparent url("/images/logo_red.png") left top no-repeat;
+  background-size: 650px;
+  background-position: center;
+}
+
+
+/* COMPANY SECTION */
+
+.company {
+  backface-visibility: hidden;
+  background: #fff;
+  width: 80vw;
+  box-shadow: 0px 22px 60px rgba(23, 36, 67, 0.1);
+  border-radius: 8px;
+  background: #fff url("/images/lock.png") center right 10% no-repeat;
+  background-size: 40%;
+
+  padding: 5%;
+  margin: 0 auto;
+  margin-top: -110px;
+  margin-bottom: 70px;
+}
+.company h1 {
+  margin-bottom: 30px;
+  padding-bottom: 20px;  
+}
+.text,
+.service ul {
+  line-height: 1.7;
+
+}
+.company .text {
+  font-weight: 400;
+}
+
+
+/* SECTION SERVICES */
+.services-wrap {
+  background: transparent url("/images/services_1.png") center no-repeat;
+  color: var(--main-color);
+  width: 100vw;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.services {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+}
+.services-description,
+.service {
+  border-radius: 8px;
+}
+.services-description {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.services-description h1 {
+  margin-bottom: 25px;
+}
+
+.service {
+  background-color: var(--main-color);
+  box-shadow: 0px 22px 60px rgba(23, 36, 67, 0.1);
+  color: var(--light-color);
+}
+.service,
+.service *,
+.btn-contact,
+.customers img {
+  transition: all .5s ease;
+
+}
+.service h3 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  color: var(--dark-color);
+  margin-bottom: 25px;
+}
+
+.service-icon {
+  display: inline-flex;
+  min-width: 65px;
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  background-color: var(--bright-color);
+}
+.service ul {
+  list-style-type: disc;
+  margin-left: 30px;
+}
+.service:hover{
+  background-color: var(--dark-color);
+  color: var(--main-color);
+}
+.service:hover h3 .title {
+  color: var(--main-color);
+}
+.btn-contact {
+  padding: 20px 40px;
+  background-color: var(--bright-color);
+  color: var(--main-color);
+  font-size: 16px;
+  line-height: 1.2;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn-contact:hover {
+  background-color: var(--bright-color-hover);
+}
+.btn-contact i {
+  position: relative;
+  top: 3px;
+  margin-left: 9px;
+}
+.services-wrap .btn-contact {
+  margin-top: 95px;
+}
+
+
+/* ADVANTAGES */
+.advantages-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--main-color);
+}
+.advantages {
+  background-color: var(--dark-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  border-radius: 8px;
+  padding: 65px 20px;
+  gap: 40px;
+}
+.advantages-description {
+  width: 60%;
+}
+.advantages-description h1 {
+  margin-bottom: 25px;
+}
+.advantages-items {
+  width: 25%;
+  gap: 40px;
+}
+.advantages-items,
+.advantage-item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+.advantage-item .value {
+  font-size: 60px;
+  font-weight: 700;
+}
+.advantage-item .description {
+  font-weight: 500;
+  color: var(--light-color);
+}
+
+/* CUSTOMERS */
+.customers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.customers img {
+  width: 100px;
+  margin-right: 40px;
+  vertical-align: middle;
+  opacity: .5;
+}
+.customers img:last-child {
+  margin: 0;
+}
+.customers img:hover {
+  opacity: 1;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--dark-color);
+  min-height: 300px;
+  width: 100vw;
+  color: var(--footer-text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 75px 50px;
+  gap: 40px;
+}
+.footer-contats-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  gap: 60px;
+  width: 100%;
+
+  line-height: 1.7;
+  font-weight: 400;
+  padding-bottom: 40px;
+  border-bottom: 1px rgba(126, 123, 143, .5) solid;
+}
+.footer-contats {
+  min-width: 168px;
+}
+.footer-contats i {
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
+.footer-contats .phone {
+  margin-bottom: 15px;
+}
+
+.footer-logo {
+  width: 160px;
+  height: 72px;
+  margin-bottom: 15px;
+  margin-top: -10px;
+}
+.test-info h3 {
+  margin-bottom: 40px;
+}
+
+
+.policy-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 300;
+}
+.policy a {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+/* *************************** */
+/* ADAPTATION */
+@media (min-width: 576px) {
+  
+ }
+
+
+
+
+@media (min-width: 768px) {
+  
+ }
+
+
+
+
+@media (min-width: 992px) {
+  .company {
+    background: #fff url("/images/lock.png") center right 10% no-repeat;
+    background-size: 40%;
+  }
+  h1 {
+    font-size: 42px;
+  }
+  .company-description {
+    width: 58%;
+  }
+
+  .text,
+  .service ul  {
+    font-size: 15px;
+  }
+  .services-wrap {
+    padding: 95px 0;
+  }
+
+  .services {
+    max-width: 1080px;
+    gap: 20px;
+  }
+  .services-description,
+  .service {
+    width: 340px;
+    height: 340px;
+
+  }
+  .service h3 {
+    font-size: 20px;
+  }
+  .service {
+    padding: 31px;
+    padding-right: 37px;
+  }
+  .advantages-wrap {
+    padding: 60px 0;
+    gap: 40px;
+  }
+  
+  .advantages-items {
+    gap: 40px;
+  }
+  .advantage-item .value {
+    font-size: 49px;
+  }
+  .advantage-item .description {
+    font-size: 20px;
+  }
+  .footer-contats-wrap {
+    font-size: 14px;
+  }
+ }
+
+
+
+
+
+
+@media (min-width: 1200px) {
+  .company-description {
+    width: 545px;
+  }
+  .company {
+    background: #fff url("/images/lock.png") center right 10% no-repeat;
+    background-size: 45%;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+  .company-description {
+    width: 52%;
+  }
+  .text {
+    font-size: 16px;
+  }
+  .advantages-wrap {
+    padding: 145px 0;
+  }
+  .advantage-item {
+    margin-bottom: 56px;
+  }
+  .advantage-item .value {
+    font-size: 64px;
+  }
+  .advantage-item .description {
+    font-size: 22px;
+  }
+  .footer-contats-wrap {
+    font-size: 16px;
+  }
+ }
