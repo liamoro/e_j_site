@@ -71,7 +71,7 @@ header {
   height: 57px;
 }
 .white-logo {
-  background: transparent url("/images/logo_white_1.png") center no-repeat;
+  background: transparent url("./images/logo_white_1.png") center no-repeat;
   background-size: contain;
 }
 
@@ -103,7 +103,7 @@ header {
 .preview {
   width: 100vw;
   height: 100vh;
-  background: transparent url("/images/main_img.png") left top no-repeat;
+  background: transparent url("./images/main_img.png") left top no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -118,7 +118,7 @@ header {
 }
 .preview-logo {
   position: absolute;
-  background: transparent url("/images/logo_red.png") left top no-repeat;
+  background: transparent url("./images/logo_red.png") left top no-repeat;
   background-size: 650px;
   background-position: center;
 }
@@ -132,7 +132,7 @@ header {
   width: 80vw;
   box-shadow: 0px 22px 60px rgba(23, 36, 67, 0.1);
   border-radius: 8px;
-  background: #fff url("/images/lock.png") center right 10% no-repeat;
+  background: #fff url("./images/lock.png") center right 10% no-repeat;
   background-size: 40%;
 
   padding: 5%;
@@ -156,7 +156,7 @@ header {
 
 /* SECTION SERVICES */
 .services-wrap {
-  background: transparent url("/images/services_1.png") center no-repeat;
+  background: transparent url("./images/services_1.png") center no-repeat;
   color: var(--main-color);
   width: 100vw;
   background-size: cover;
@@ -408,7 +408,7 @@ footer {
 
 @media (min-width: 992px) {
   .company {
-    background: #fff url("/images/lock.png") center right 10% no-repeat;
+    background: #fff url("./images/lock.png") center right 10% no-repeat;
     background-size: 40%;
   }
   h1 {
@@ -472,7 +472,7 @@ footer {
     width: 545px;
   }
   .company {
-    background: #fff url("/images/lock.png") center right 10% no-repeat;
+    background: #fff url("./images/lock.png") center right 10% no-repeat;
     background-size: 45%;
   }
 
