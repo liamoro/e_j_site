@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  /* position: fixed; */
+  gap: 50px;
+  width: 80vw;
+  height: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+
+/* NAVIGATION */
+.header__nav {
+  flex: 3;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  list-style-type: none;
+
+}
+.nav__item a:hover,
+.nav__item.active a {
+  color: #FF2448;
+} 
+.nav__item a {
+  text-decoration: none;
+  color: #FFF;
+} 
+
+
+
+/* header-contacts */
+.header__contacts {
+  /* flex: 1; */
+}
+.header__number {
+  font-weight: 900;
+  color: #FFF;
+}

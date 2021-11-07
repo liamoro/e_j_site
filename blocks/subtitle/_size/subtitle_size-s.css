@@ -1,0 +1,39 @@
+
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+  .subtitle_size-s {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .subtitle_size-m {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .subtitle_size-l {
+    font-size: 26px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 1200px)  {
+  .subtitle_size-s {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .subtitle_size-m {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .subtitle_size-l {
+    font-size: 26px;
+    font-weight: 400;
+  }
+}

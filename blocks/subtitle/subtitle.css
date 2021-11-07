@@ -1,0 +1,7 @@
+@import url("./_size/subtitle_size-s.css");
+@import url("./_theme/subtitle_theme-default.css");
+
+.subtitle {
+  font-family: 'Inter', sans-serif;
+
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/all.css">
+  
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  
+  <!-- <link rel="stylesheet" href="./blocks/about/about.css"> -->
+
+  <title>Singleton security</title>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header__logo logo logo_size-s logo_theme-light"></div>
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="./index.html">Главная</a></li>
+        <li class="nav__item active"><a href="./page_team.html">О команде</a></li>
+        <li class="nav__item"><a href="./page_contacts.html">Связаться с нами</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__contacts">
+      <div class="header__number">+7(900)000-00-00</div>
+      <span class="header__subtitle subtitle subtitle_size-s subtitle_theme-default">Связаться с нами</span>
+    </div>
+
+  </header>
+
+  <!-- PREVIEW SECTION -->
+  <section class="preview preview-team">
+    <div class="title title_size-s title_theme-bright">О  команде</div>
+    <div class="preview__title title title_size-xl title_theme-light">
+      Эксперты
+      <br>
+      с обширным опытом</div>
+  </section>
+
+
+  <!-- ABOUT SECTION -->
+
+  <div class="slider-wrap">
+    <div class="slider">
+      <div class="slider__col slider__col_empl slider__col_theme-light">
+        <div class="slider__img"><img src="./images/employee_1.png" alt="employee_1"></div>
+        <div class="title title_size-m title_theme-dark">Егор Богомолов</div>
+        <div class="subtitle subtitle_size-m subtitle_theme-default">Top of the top</div>
+      </div><!--slider__col-->
+
+      <div class="slider__col slider__col_skills slider__col_theme-dark">
+        <div class="slider__item skill">
+          <div class="skill__subtitle subtitle subtitle_size-s subtitle_theme-default">Опыт:</div>
+          <div class="skill__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do</div>
+        </div>
+
+        <div class="slider__item skill">
+          <div class="skill__subtitle subtitle subtitle_size-s subtitle_theme-default">Опыт:</div>
+          <div class="skill__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do</div>
+        </div>
+
+        <div class="slider__item skill">
+          <div class="skill__subtitle subtitle subtitle_size-s subtitle_theme-default">Выступления:</div>
+          <div class="skill__text">
+            <ul class="skill__list">
+              <li>Amet minim mollit non deserunt</li>
+              <li>Ullamco est sit aliqua dolor do amet sint</li>
+              <li>Velit officia consequat duis enim velit mollit</li>
+              <li>Exercitation veniam consequat sunt nostrud amet</li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="slider__item skill">
+          <div class="skill__subtitle subtitle subtitle_size-s subtitle_theme-default">Награды:</div>
+          <div class="skill__text">
+            <ul class="skill__list">
+              <li>Amet minim mollit non deserunt</li>
+              <li>Ullamco est sit aliqua dolor do amet sint</li>
+            </ul>
+          </div>
+        </div>
+      </div><!--slider__col-->
+      <div class="slider__col slider__col_empl slider__col_theme-light">
+        <div class="slider__img"><img src="./images/employee_1.png" alt="employee_1"></div>
+        <div class="title title_size-m title_theme-dark">Егор Богомолов</div>
+        <div class="subtitle subtitle_size-m subtitle_theme-default">Top of the top</div>
+      </div><!--slider__col-->
+
+      <div class="slider__col slider__col_skills slider__col_theme-dark">
+        <div class="slider__item skill">
+          <div class="skill__subtitle subtitle subtitle_size-s subtitle_theme-default">Опыт:</div>
+          <div class="skill__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do</div>
+        </div>
+
+        <div class="slider__item skill">
+          <div class="skill__subtitle subtitle subtitle_size-s subtitle_theme-default">Опыт:</div>
+          <div class="skill__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do</div>
+        </div>
+
+        <div class="slider__item skill">
+          <div class="skill__subtitle subtitle subtitle_size-s subtitle_theme-default">Выступления:</div>
+          <div class="skill__text">
+            <ul class="skill__list">
+              <li>Amet minim mollit non deserunt</li>
+              <li>Ullamco est sit aliqua dolor do amet sint</li>
+              <li>Velit officia consequat duis enim velit mollit</li>
+              <li>Exercitation veniam consequat sunt nostrud amet</li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="slider__item skill">
+          <div class="skill__subtitle subtitle subtitle_size-s subtitle_theme-default">Награды:</div>
+          <div class="skill__text">
+            <ul class="skill__list">
+              <li>Amet minim mollit non deserunt</li>
+              <li>Ullamco est sit aliqua dolor do amet sint</li>
+            </ul>
+          </div>
+        </div>
+      </div><!--slider__col-->
+
+      <div class="slider__col slider__col_empl slider__col_theme-light">
+        <div class="slider__img"><img src="./images/employee_1.png" alt="employee_1"></div>
+        <div class="title title_size-m title_theme-dark">Егор Богомолов</div>
+        <div class="subtitle subtitle_size-m subtitle_theme-default">Top of the top</div>
+      </div><!--slider__col-->
+
+      <div class="slider__col slider__col_skills slider__col_theme-dark">
+        <div class="slider__item skill">
+          <div class="skill__subtitle subtitle subtitle_size-s subtitle_theme-default">Опыт:</div>
+          <div class="skill__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do</div>
+        </div>
+
+        <div class="slider__item skill">
+          <div class="skill__subtitle subtitle subtitle_size-s subtitle_theme-default">Опыт:</div>
+          <div class="skill__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do</div>
+        </div>
+
+        <div class="slider__item skill">
+          <div class="skill__subtitle subtitle subtitle_size-s subtitle_theme-default">Выступления:</div>
+          <div class="skill__text">
+            <ul class="skill__list">
+              <li>Amet minim mollit non deserunt</li>
+              <li>Ullamco est sit aliqua dolor do amet sint</li>
+              <li>Velit officia consequat duis enim velit mollit</li>
+              <li>Exercitation veniam consequat sunt nostrud amet</li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="slider__item skill">
+          <div class="skill__subtitle subtitle subtitle_size-s subtitle_theme-default">Награды:</div>
+          <div class="skill__text">
+            <ul class="skill__list">
+              <li>Amet minim mollit non deserunt</li>
+              <li>Ullamco est sit aliqua dolor do amet sint</li>
+            </ul>
+          </div>
+        </div>
+      </div><!--slider__col-->
+
+    </div>
+  </div>
+
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__info">
+      <div class="footer__contacts contacts">
+        <div class="footer__logo logo logo_size-m logo_theme-light"></div>
+        <a href="" class="contacts__phone">
+          <i class="contacts__icon ri-phone-line"></i>
+          +7(900)000-00-00
+        </a>
+        <a href=""  class="contacts__e-mail">
+          <i class="contacts__icon ri-mail-line"></i>
+          lorem@ipsum.com
+        </a>
+      </div>
+
+      <div class="info-box">
+        <h3 class="info-box__title title title_size-s title_theme-default">Lorem iosum</h3>
+        <div class="info-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat obcaecati quam ipsum delectus!</div>
+      </div>
+      <div class="info-box">
+        <h3 class="info-box__title title title_size-s  title_theme-default">Lorem iosum</h3>
+        <div class="info-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat obcaecati quam ipsum delectus!</div>
+      </div>
+      <div class="info-box">
+        <h3 class="info-box__title title title_size-s  title_theme-default">Lorem iosum</h3>
+        <div class="info-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat obcaecati quam ipsum delectus!</div>
+      </div>
+
+    </div>
+
+    <div class="policy-wrap">
+      <a href="" class="policy">Политика конфиденциальности</a>
+      <div class="copyright"><i class="copyright__icon ri-copyright-line"></i>
+        Singleton. 2021</div>
+    </div>
+  </footer>
+</body>
+</html>

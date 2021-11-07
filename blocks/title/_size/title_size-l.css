@@ -1,0 +1,30 @@
+/* .title_size-l {
+  font-size: 48px;
+} */
+
+
+
+
+@media (min-width: 576px) {
+  .title_size-l {
+    font-size: 34px;
+  }
+}
+
+@media (min-width: 768px) {
+  .title_size-l {
+    font-size: 38px;
+  }
+}
+
+@media (min-width: 992px) {
+  .title_size-l {
+    font-size: 42px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title_size-l {
+    font-size: 48px;
+  }
+}

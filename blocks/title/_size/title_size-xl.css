@@ -1,0 +1,24 @@
+
+@media (min-width: 576px) {
+  .title_size-xl {
+    font-size: 52px;
+  }
+}
+
+@media (min-width: 768px) {
+  .title_size-xl {
+    font-size: 56px;
+  }
+}
+
+@media (min-width: 992px) {
+  .title_size-xl {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title_size-xl {
+    font-size: 64px;
+  }
+}

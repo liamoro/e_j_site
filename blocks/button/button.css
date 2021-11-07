@@ -1,0 +1,34 @@
+
+.button {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.4s ease;
+}
+
+.button__icon {
+  position: relative;
+  top: 3px;
+  padding-left: 9px;
+}
+
+/* SIZE */
+.button_size-m {
+  font-size: 16px;
+  line-height: 1.2;
+  padding: 20px 40px;
+}
+
+/* THEME-RED */
+.button_theme-red {
+  background-color: #FF2448;
+  color: #FFF;
+}
+
+.button_theme-red:hover {
+  background-color: #FF5773;
+}
+.button_theme_red .button__icon {
+  color: #FFF;
+}
+

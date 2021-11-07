@@ -1,0 +1,13 @@
+@import url("./_size/title_size-s.css");
+@import url("./_size/title_size-m.css");
+@import url("./_size/title_size-l.css");
+@import url("./_size/title_size-xl.css");
+@import url("./_theme/title_theme-light.css");
+@import url("./_theme/title_theme-dark.css");
+@import url("./_theme/title_theme-default.css");
+@import url("./_theme/title_theme-bright.css");
+
+.title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
