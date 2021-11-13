@@ -7,9 +7,21 @@
 @import url("../blocks/header/header.css");
 @import url("../blocks/about/about.css");
 @import url("../blocks/title/title.css");
+
+@import url("../blocks/title/_size/title_size-s.css");
+@import url("../blocks/title/_size/title_size-m.css");
+@import url("../blocks/title/_size/title_size-l.css");
+@import url("../blocks/title/_size/title_size-xl.css");
+@import url("../blocks/title/_theme/title_theme-light.css");
+@import url("../blocks/title/_theme/title_theme-dark.css");
+@import url("../blocks/title/_theme/title_theme-default.css");
+@import url("../blocks/title/_theme/title_theme-bright.css");
+
 @import url("../blocks/logo/logo.css");
 
 @import url("../blocks/subtitle/subtitle.css");
+@import url("../blocks/subtitle/_size/subtitle_sizes.css");
+@import url("../blocks/subtitle/_theme/subtitle_theme-default.css");
 @import url("../blocks/service/service.css");
 @import url("../blocks/button/button.css");
 
