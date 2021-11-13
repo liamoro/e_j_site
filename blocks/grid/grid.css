@@ -1,0 +1,29 @@
+.container {
+  max-width: 100%;
+  /* overflow: hidden; */
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 100vw;
+    /* max-width: 1140px; */
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 90vw;
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 80vw;
+    max-width: 1140px;
+  }
+}

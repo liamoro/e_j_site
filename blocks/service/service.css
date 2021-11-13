@@ -2,8 +2,10 @@
 .service {
   box-shadow: 0px 22px 60px rgba(23, 36, 67, 0.1);
   border-radius: 8px;
-  width: 340px;
-  height: 340px;
+  padding: 20px;
+  /* width: 340px; */
+  /* min-width: 360px; */
+  /* height: 340px; */
 }
 .service,
 .service *,
@@ -39,6 +41,8 @@
 .service__list {
   list-style-type: disc;
   margin-left: 30px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .service_theme-light:hover {
@@ -48,4 +52,44 @@
 .service_theme-light:hover .service__title,
 .service_theme-light:hover .service__list {
   color: #FFF;
+}
+
+
+
+@media (max-width: 767px){
+  .service {
+    width: 288px;
+  }
+  .service__header {
+    margin-bottom: 15px;
+  }
+  .service__list {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px){
+  .service {
+    width: 340px;
+    height: 340px;
+    padding: 20px;
+  }
+}
+@media (min-width: 992px){
+  
+
+  .service {
+    padding: 38px;
+    width: 45%;
+    height: 360px;
+    max-width: 360px;
+  }
+}
+@media (min-width: 1200px){
+  .service {
+    padding: 38px;
+    width: 30%;
+    height: 360px;
+    min-width: 360px;
+  }
+
 }

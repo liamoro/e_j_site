@@ -1,0 +1,52 @@
+.subtitle_size-s {
+  font-size: 14px;
+  font-weight: 400;
+}
+.subtitle_size-m {
+  font-size: 24px;
+  font-weight: 400;
+}
+.subtitle_size-l {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+
+@media (min-width: 576px) {
+  .subtitle_size-m {
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 768px) {
+  .subtitle_size-m {
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 992px) {
+  .subtitle_size-s {
+    font-size: 14px;
+  }
+  .subtitle_size-m {
+    font-size: 22px;
+    font-weight: 300;
+  }
+  .subtitle_size-l {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1200px)  {
+  .subtitle_size-s {
+    font-size: 14px;
+  }
+  .subtitle_size-m {
+    font-size: 24px;
+  }
+  .subtitle_size-l {
+    font-size: 26px;
+  }
+}

@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700;900&display=swap');
 
+
+@import url("../blocks/grid/grid.css");
 @import url("../blocks/soar-section/soar-section.css");
 
 @import url("../blocks/header/header.css");
@@ -26,13 +28,6 @@ body {
   /* text-decoration: none;
   font-family: 'Inter', sans-serif; */
 }
-
-
-.advantage__item .advantage__value,
-.contacts__icon {
-  color: #FF2448;
-}
-
 
 
 /* PREVIEW SECTION */
@@ -144,12 +139,24 @@ body {
 
 /* *************************** */
 /* ADAPTATION */
-@media (min-width: 576px) {
-  
+@media (max-width: 767px) {
+  .footer__info {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .info-box__title {
+    margin-bottom: 20px;
+  }
 }
 
-@media (min-width: 768px) {
- 
+@media (min-width: 768px) and (max-width: 992px) {
+  .footer__info {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .info-box__title {
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: 992px) {

@@ -14,7 +14,7 @@
 <body>
 
   <!-- HEADER -->
-  <header class="header">
+  <header class="header container">
     <div class="header__logo logo logo_size-s logo_theme-light"></div>
     <nav class="header__nav nav">
       <ul class="nav__list">
@@ -25,7 +25,7 @@
     </nav>
 
     <div class="header__contacts">
-      <div class="header__number">+7(900)000-00-00</div>
+      <div class="header__number">+7 (900) 000 00 00</div>
       <span class="header__subtitle subtitle subtitle_size-s subtitle_theme-default">Связаться с нами</span>
     </div>
 
@@ -42,7 +42,7 @@
 
 
   <!-- ABOUT SECTION -->
-  <section class="soar-section">
+  <section class="soar-section container">
     <div class="about">
       <div class="about__container">
         <h1 class="about__title title title_size-l title_theme-dark">Профиль</h1>
@@ -65,7 +65,7 @@
 
   <!-- SERVICES -->
   <section class="services-wrap">
-    <div class="services">
+    <div class="services container">
 
       <div class="services__description">
         <h1 class="title  title_size-m title_theme-light">
@@ -171,9 +171,14 @@
 
   <!-- ADVANTAGES -->
   <section class="advantages-wrap">
-    <div class="advantages">
+    <div class="advantages container">
       <div class="advantages__description">
-        <h1  class="advantages__title title  title_size-m title_theme-light">Почему выбирают Singleton Security?</h1>
+        <h1  class="advantages__title advantages__title_light title  title_size-m title_theme-light">Почему выбирают Singleton Security?</h1>
+        <h1  class="advantages__title advantages__title_dark title  title_size-m title_theme-dark">
+          Почему выбирают
+          <br>
+          <span class="title_theme-bright">Singleton Security?</span></h1>
+
         <div class="advantages__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
       </div>
       <div class="advantages__items">
@@ -198,9 +203,9 @@
 
   
 
-    <div class="customers">
+    <div class="customers container">
       <h1 class="title title_size-m title_theme-dark">Нам доверяют</h1>
-      <div>
+      <div class="customers__row">
         <img src="./images/customer_1.png" class="customer" >
         <img src="./images/customer_2.png" class="customer">
         <img src="./images/customer_3.png" class="customer">

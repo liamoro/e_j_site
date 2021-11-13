@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .about__container {
@@ -33,11 +34,27 @@
 }
 
 
-@media (min-width: 576px) {
+@media (max-width: 767px) {
+  .about {
+    padding: 25px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .about__container {
+    flex: none;
+    width: 100%;
+  }
+  .about__img {
+    flex: none;
+    max-width: 239px;
 
+  }
 }
 
 @media (min-width: 768px) {
+  .about {
+    padding: 25px;
+  }
 
 }
 
