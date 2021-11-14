@@ -4,6 +4,18 @@
   color: #FF2448;
 }
 
+/* PREVIEW SECTION */
+.preview {
+  width: 100vw;
+  height: 80vh;
+  min-height: 600px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
 
 /* main section */
 .main-preview {
@@ -336,7 +348,7 @@
   }
   .advantages__items {
     max-width: 25%;
-    min-width: 195px;
+    min-width: 250px;
     gap: 40px;
     display: flex;
     flex-direction: column;
@@ -354,6 +366,7 @@
     align-items: start;
     justify-content: space-between;
     gap: 10px;
+    height: auto;
   }
   .advantage__item .advantage__value {
     font-size: 49px;

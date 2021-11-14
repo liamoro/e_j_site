@@ -36,24 +36,13 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
-
-  /* text-decoration: none;
-  font-family: 'Inter', sans-serif; */
+}
+* {
+  box-sizing: border-box;
 }
 
 
-/* PREVIEW SECTION */
-.preview {
-  width: 100vw;
-  height: 80vh;
-  min-height: 600px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 40px;
-}
 
 
 /* FOOTER */
@@ -140,9 +129,6 @@ body {
   position: relative;
   top: 2px;
 }
-
-
-
 
 
 

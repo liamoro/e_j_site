@@ -1,13 +1,17 @@
 
-@media (min-width: 576px) {
+.title_size-xl {
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
   .title_size-xl {
-    font-size: 52px;
+    font-size: 34px;
   }
 }
 
 @media (min-width: 768px) {
   .title_size-xl {
-    font-size: 56px;
+    font-size: 34px;
   }
 }
 
